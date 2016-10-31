@@ -30,7 +30,7 @@ import android.net.wifi.WifiManager;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
-//asdkaskdksadksadk
+//asdkaskdksadksadksadsad
 public class Drink extends Activity
         implements OnClickListener{
 
