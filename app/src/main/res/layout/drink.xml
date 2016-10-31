@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/hongb_textview"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"></TextView>
+
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:hint="IP주소를입력하세요" android:id="@+id/ip_EditText"/>
+
+        <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:hint="PORT주소를입력하세요" android:id="@+id/port_EditText"/>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/connect_Button"
+            android:text="연결"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="좌석번호를 입력하고 주문할 음식을 선택하세요"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_above="@+id/textView2"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="좌석번호를 입력해주세요"
+            android:id="@+id/editText" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음료1"
+            android:id="@+id/checkBox6"
+            android:checked="false"
+            android:onClick="onClick" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음료2"
+            android:id="@+id/checkBox7"
+            android:checked="false"
+            android:onClick="onClick" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음료3"
+            android:id="@+id/checkBox8"
+            android:checked="false"
+            android:onClick="onClick" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음료4"
+            android:id="@+id/checkBox9"
+            android:checked="false"
+            android:onClick="onClick" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="음료5"
+            android:id="@+id/checkBox10"
+            android:checked="false"
+            android:onClick="onClick" />
+
+
+        <LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent">
+
+        </LinearLayout>
+
+
+        <RelativeLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center">
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+
+
+            <ScrollView android:layout_height="wrap_content" android:layout_width="match_parent">
+
+                <TextView android:layout_height="wrap_content" android:layout_width="392dp" android:id="@+id/showText_TextView" android:text=""/>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+            <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:hint="메세지를작성해주세요" android:id="@+id/editText_massage" android:layout_weight="0.5" android:ems="10"/>
+
+            <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/Button_send" android:text="전송" android:layout_weight="2" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

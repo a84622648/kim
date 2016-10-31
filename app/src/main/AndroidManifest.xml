@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projeck1" >
+    <uses-sdk
+
+        android:minSdkVersion="7" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.NFC" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="주문할게요"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="주문할게요"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HongdaeActivity" android:label="홍대액티비티" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Honga" android:label="홍대a액티비티" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Drink" android:label="음료" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Gitar" android:label="기타" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Hongc" android:label="홍대c액티비티" android:windowSoftInputMode="stateHidden"/>
+
+    </application>
+
+</manifest>
